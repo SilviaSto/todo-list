@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputButtonUnitComponent } from './components/input-button-unit/input-button-unit.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputButtonUnitComponent
+    InputButtonUnitComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
