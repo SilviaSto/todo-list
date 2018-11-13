@@ -7,7 +7,7 @@ import { TodoItem } from 'src/app/interfaces/todo-item';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-list'; //title->dynamic variable
+  title = 'todo-list'; //->dynamic variable
   todoList: TodoItem[] = [
     {title: 'install NodeJS'},
     {title: 'install Angular CLI'},
