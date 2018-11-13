@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-button-unit.component.css']
 })
 export class InputButtonUnitComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() { //a life-cycle hook and this will run when the component is initialized
+  title = 'Hello world!';
+  constructor() {
+    
   }
+  
+  ngOnInit() { //a life-cycle hook and this will run when the component is initialized
+
+  }
+
+  changeTitle(newTitle: string) {
+    this.title = newTitle;
+  }
+
 
 }
