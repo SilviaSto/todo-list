@@ -6,6 +6,6 @@
 
 <ul>
   <li *ngFor="let todoItem of todoList"> <!--*ngFor is a built-in derictive-->
-    {{ todoItem.title }}
+    <app-todo-item [item]="todoItem"></app-todo-item>
   </li>
 </ul>
