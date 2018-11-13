@@ -1,4 +1,11 @@
 <h1>
   {{ title | uppercase }} <!--interpolation-->
 </h1>
+
 <app-input-button-unit></app-input-button-unit> <!--To display the Element Component, it must be added to the template of the shell AppComponent.-->
+
+<ul>
+  <li *ngFor="let todoItem of todoList"> <!--*ngFor is a built-in derictive-->
+    {{ todoItem.title }}
+  </li>
+</ul>
