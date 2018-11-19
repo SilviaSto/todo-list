@@ -1,11 +1,13 @@
-<h1>
+<h1 class="app-title">
   {{ title | uppercase }} <!--interpolation-->
 </h1>
 
-<app-input-button-unit (submit)="addItem($event)"></app-input-button-unit> <!--To display the Element Component, it must be added to the template of the shell AppComponent.-->
+<div class="todo-app">
+  <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit> <!--To display the Element Component, it must be added to the template of the shell AppComponent.-->
 
-<ul>
-  <li *ngFor="let todoItem of todoList"> <!--*ngFor is a built-in derictive-->
-    <app-todo-item [item]="todoItem"></app-todo-item>
-  </li>
-</ul>
+  <ul>
+    <li *ngFor="let todoItem of todoList"> <!--*ngFor is a built-in derictive-->
+      <app-todo-item [item]="todoItem"></app-todo-item>
+    </li>
+  </ul>
+</div>
